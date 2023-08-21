@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var cty = document.getElementById('chart2');
+    var nextChart = new Chart(cty, {
+        type: 'scatter',
+        data: {
+            datasets:[{
+                label: 'Dataset1',
+                backgroundColor: 'rgba(255, 200, 50, 1)',
+                pointBackgroundColor: 'rgba( 255, 200, 50, 1)',
+                pointRadius: 4,
+                data: [
+                    {x: 7, y: 10},
+                    {x: 11, y: 25},
+                    {x: 15, y: 15}
+                ]
+            }, {
+                label: 'dataset2',
+                backgroundColor: 'rgba (50, 200, 50, 1)',
+                pointBackgroundColor: 'rgba(39, 40, 145, 0.8)',
+                pointRadius: 4,
+                data: [
+                    {x: 1, y: 10},
+                    {x: 7, y: 13},
+                    {x: 15, y: 16}
+                ]
+            },{
+                label: 'dataset3',
+                backgroundColor: 'rgba (50, 200, 50, 1)',
+                pointBackgroundColor: 'rgba(255, 255, 145, 0.8)',
+                pointRadius: 4,
+                data: [
+                    {x: 1, y:10},
+                    {x: 7, y: 13},
+                    {x: 15, y: 16}
+                ]
+            },{
+                label: 'dataset4',
+                backgroundColor: 'rgba (50, 200, 50, 1)',
+                pointBackgroundColor: 'rgba(0, 255, 255, 0.8)',
+                pointRadius: 4,
+                data: [
+                    {x: 1, y:10},
+                    {x: 7, y: 13},
+                    {x: 15, y: 16}
+                ]
+            }]
+        },
+        options: {
+            scales: {
+                xAxis: {
+                    beginAtZero: true
+                },
+                yAxis: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'sales'
+                }
+            }
+        }
+    });
+</script>
+
+has context menu
+</body>
+</html>
